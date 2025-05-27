@@ -1,0 +1,126 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:80px;
+    margin: 80px 170px;
+}
+.contact-title{
+    position: relative;
+}
+
+.contact-title h1{
+    padding : 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.contact-title img{
+    position: absolute;
+    bottom : 0;
+    right : 0;
+    z-index :-1;
+}
+
+.contact-section{
+    display:flex;
+    gap: 150px;
+
+}
+.contact-left{
+    display : flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.contact-left h1{
+    font-size: 80px;
+    font-weight: 700;
+    background:linear-gradient(270deg,#DF8908 80%,#B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.contact-left p{
+    max-width: 550px;
+    color : #d8d8d8;
+    font-size : 20px;
+    line-height: 35px;
+
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color:#d8d8d8;
+    font-size: 22px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-right{
+    display : flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+}
+.contact-right label{
+    color : #D8D8D8;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.contact-right input{
+    border : none;
+    width : 700px;
+    height: 78px;
+    padding-left:20px;
+    border-radius:4px;
+    background:#32323c;
+    color:#A0A0A0;
+    font-size: 20px;
+    font-family : Outfit;
+
+
+
+}
+.contact-right textarea{
+    border : none;
+    width : 700px;
+    height: 200px;
+    padding-left:20px;
+    padding-top:20px;
+    border-radius:4px;
+    background:#32323c;
+    color:#A0A0A0;
+    font-size: 20px;
+    font-family : Outfit;
+
+}
+.contact-right button{
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #ff4fc9, #6f00ff); /* Pink to Purple */
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(255, 79, 201, 0.3);
+}
+.contact-right button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(111, 0, 255, 0.4);
+}
+
+

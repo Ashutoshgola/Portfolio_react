@@ -1,0 +1,98 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 60px;
+    font-size: 20px;
+}
+
+.nav-connect {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #ff4fc9, #6f00ff); /* Pink to Purple */
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(255, 79, 201, 0.3);
+}
+.nav-connect:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(111, 0, 255, 0.4);
+}
+
+.nav-menu li {
+    display :flex;
+    flex-direction: column;
+    gap:5px;
+    cursor: pointer;
+}
+.nav-menu li img{
+    display : flex;
+    margin: auto;
+}
+
+.anchor-link {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-logo img {
+  width: 80px; 
+  height: auto;
+}
+.nav-mob-close{
+    display:none;
+}
+.nav-mob-open{
+    display:none;
+}
+@media(max-width:768px){
+    .navbar{
+        margin: 20px 50px;
+    }
+    .nav-connect{
+        display:none;
+
+    }
+    .nav-mob-open{
+        display : block;
+        position: fixed;
+        right: 30px;
+    }
+    .nav-mob-close{
+        display:block;
+        position: relative;
+        top:30px;
+        left: 290px;
+        width:30px
+    }
+    .nav-menu{
+        position: fixed;
+        top: 0;
+        width: 350px;
+        height: 100%;
+        background-color: #1F0016;
+        flex-direction: column;
+        align-items: start;
+        z-index:2;
+        gap: 30px;
+        transition: transform right 0.5s;
+        right : -350px;
+    }
+    .nav-menu li{
+        font-size : 30px;
+        padding-left : 10px;
+
+
+    }
+}

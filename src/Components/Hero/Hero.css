@@ -1,0 +1,85 @@
+.profile-circle{
+    width: 300px;
+    height: 300px;
+    border-radius: 200%;
+    object-fit: cover;  
+
+    /* background-color: #f0f0f0;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    margin: auto; */
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+.hero img{
+    margin: 100px
+}
+
+.hero h1{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+.hero h1 span{
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero p{
+    font-size: 20px;
+    text-align: center;
+    width: 60%;
+    color: #b0b0b0;
+}
+
+.hero button{
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #ff4fc9, #6f00ff); /* Pink to Purple */
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(255, 79, 201, 0.3);
+     margin-right: 15px;
+
+}
+
+.hero button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(111, 0, 255, 0.4);
+}
+/* .hero-connect{
+    padding: 25px 45px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%); 
+
+} */
+
+@media(max-width:768px){
+    .hero img{
+        margin-bottom: 120px;
+        width:260px
+    }
+    .hero h1{
+        margin-top:50px;
+        font-size: 50px;
+        width : 90px
+    }
+    .hero p{
+        width: 60%;
+        font-size: 18px;
+        line-height: 32px;
+        margin:10px 0;
+    }
+}
